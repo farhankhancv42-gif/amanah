@@ -11,6 +11,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
     <style>
         /* --- VARIABLES & RESET --- */
         :root {
@@ -160,7 +163,7 @@
             backdrop-filter: blur(12px);
             -webkit-backdrop-filter: blur(12px);
             border-bottom: 1px solid var(--border-color);
-            padding: .8rem 0;
+            padding: 1rem 0;
             transition: padding 0.3s ease;
         }
 
@@ -185,20 +188,22 @@
         }
 
         .logo-img {
-            height: 80px;   /* logo size control */
+            height: 65px;   /* logo size control */
             width: auto;
+            padding-left: 40px;
         }
 
 
-        .logo {
+        /*.logo {
             font-size: 1.5rem;
             font-weight: 700;
             letter-spacing: -0.5px;
-        }
+        }*/
 
         .nav-links {
             display: flex;
             gap: 2.5rem;
+            margin-top: 10px;
         }
 
         .nav-links a {
@@ -375,7 +380,7 @@
       }
 
       .portfolio{
-          padding:80px 20px;
+          padding:100px 20px;
       }
 
       .container{
@@ -621,6 +626,136 @@
     color: var(--text-muted);
 }
 
+/*Contact Us Section*/
+.contact-section{
+    font-family: 'Segoe UI', sans-serif;
+    padding-top: 60px;
+    padding-bottom: 30px;
+}
+
+.contact-container{
+    
+}
+
+.contact-section{
+    background:#0b0b0b;
+}
+
+.contact-container{
+    display:flex;
+}
+
+/* LEFT IMAGE */
+.contact-image-col .contact-image {
+    background-image: url("css/images/Contact.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+}
+
+/* RIGHT FORM */
+.col-md-6 .contact-form{
+    background:#0f0f0f;
+    padding:50px;
+    margin: 20px;
+    border-radius:15px;
+}
+
+.contact-form h3{
+    margin-bottom:25px;
+    font-size:30px;
+}
+
+.input-group{
+    position:relative;
+    margin-bottom:35px;
+}
+
+.input-group input,
+.input-group textarea{
+    width:100%;
+    padding:12px 5px;
+    background:transparent;
+    border:none;
+    border-bottom:1px solid #333;
+    color:white;
+    font-size:16px;
+    outline:none;
+    transition:0.4s ease;
+}
+
+/* Remove any default background on autofill */
+input:-webkit-autofill,
+textarea:-webkit-autofill{
+    -webkit-box-shadow: 0 0 0 1000px #0f0f0f inset !important;
+    -webkit-text-fill-color: white !important;
+}
+
+/* Label Style */
+.input-group label{
+    position:absolute;
+    left:5px;
+    top:12px;
+    color:#777;
+    pointer-events:none;
+    transition:0.3s ease;
+}
+
+/* Floating Effect */
+.input-group input:focus ~ label,
+.input-group input:valid ~ label,
+.input-group textarea:focus ~ label,
+.input-group textarea:valid ~ label{
+    top:-12px;
+    font-size:13px;
+    color:#d4af37;
+}
+
+/* Gold bottom glow */
+.input-group input:focus,
+.input-group textarea:focus{
+    border-bottom:1px solid #d4af37;
+    box-shadow:0 8px 20px -10px rgba(212,175,55,0.9);
+}
+
+.contact-button{
+    display:inline-block;
+    width: 100%;
+    padding:14px 38px;
+    font-size:16px;
+    font-weight:600;
+    border-radius:50px;
+    text-decoration:none;
+    border:none;
+    cursor:pointer;
+    transition:all 0.4s ease;
+}
+
+.contact-button{
+    background:linear-gradient(135deg,#f5d76e,#d4af37,#b8962e);
+    color:#000;
+    box-shadow:0 0 20px rgba(212,175,55,0.4);
+}
+
+/* Hover Effect */
+.contact-button:hover{
+    transform:translateY(-3px);
+    box-shadow:0 0 35px rgba(212,175,55,0.8);
+}
+
+/* Click Effect */
+.contact-button:active{
+    transform:scale(0.97);
+    box-shadow:0 0 15px rgba(212,175,55,0.6);
+}
+
+/* Responsive */
+@media(max-width:768px){
+    .contact-container{
+        flex-direction:column;
+    }
+}
 /* --- CTA SECTION --- */
 #contact {
     position: relative;
@@ -787,6 +922,7 @@ footer {
                     <li><a href="#portfolio">Portfolio</a></li>
                     <li><a href="#about">About</a></li>
                     <li><a href="#testimonials">Testimonials</a></li>
+                    <li><a href="#contact-section">Contact</a></li>
                     <li><a href="#contact" class="text-gradient" style="font-weight: 600;">Start Project</a></li>
                 </ul>
             </nav>
@@ -1044,6 +1180,57 @@ footer {
     </div>
 </section>
 
+<!-- Contact Us Section -->
+<section id="contact-section" class="contact-section">
+    <div class="contact-container">
+
+       <!-- LEFT SIDE IMAGE -->
+       <div class="col-md-6 contact-image-col">
+           <div class="contact-image">
+            <!-- <img src="css/images/contact.png" alt="Contact Image"> -->
+        </div>
+       </div>
+        
+        <!-- RIGHT SIDE FORM -->
+        <div class="col-md-6">
+            <div class="contact-form">
+            <h3>Send Us a Message</h3>
+
+            <!-- FREE EMAIL SERVICE -->
+            <form action="https://formsubmit.co/yz.amanahdigital@gmail.com" method="POST">
+
+                    <input type="hidden" name="_captcha" value="false">
+
+                    <div class="input-group">
+                        <input type="text" name="name" required>
+                        <label>Your Name</label>
+                    </div>
+
+                    <div class="input-group">
+                        <input type="email" name="email" required>
+                        <label>Your Email</label>
+                    </div>
+
+                    <div class="input-group">
+                        <input type="text" name="subject" required>
+                        <label>Subject</label>
+                    </div>
+
+                    <div class="input-group">
+                        <textarea name="message" rows="4" required></textarea>
+                        <label>Your Message</label>
+                    </div>
+
+                    <button type="submit" class="btn btn-gold contact-button">Send Message</button>
+
+            </form>
+
+         </div>
+        </div>
+        
+    </div>
+</section>
+
 <!-- Final Call to Action -->
 <section id="contact">
     <div class="container cta-content reveal">
@@ -1068,7 +1255,7 @@ footer {
                     <li><a href="#about">About Us</a></li>
                     <li><a href="#portfolio">Portfolio</a></li>
                     <li><a href="#">Careers</a></li>
-                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#contact-section">Contact</a></li>
                 </ul>
             </div>
             <div class="footer-col">
