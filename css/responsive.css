@@ -1,0 +1,111 @@
+@media (max-width: 450px) {
+
+	.hero-label {
+		font-size: 0.5rem;
+	}
+	
+	.hero-title {
+		font-size: 30px !important;
+	}
+
+	.hero-subtitle {
+    font-size: 10px;
+    margin-bottom: 1.5rem;
+    }
+
+    .reveal a {
+    padding: 0.7rem 1.4rem;
+    font-size: 0.8rem;
+    }
+
+    .section-header p {
+    font-size: 14px;
+    }
+
+    .portfolio-section {
+        padding: 50px 30px;
+    }
+
+    .portfolio-header {
+    margin-bottom: 40px;
+  }
+
+    .portfolio-filters {
+    gap: 10px;
+    margin-bottom: 40px;
+    padding-bottom: 10px;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .filter-btn {
+        font-weight: 900;
+        padding: 5px 11px;
+        font-size: 0.6rem;
+        white-space: nowrap;
+    }
+
+  .portfolio-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .card-image {
+    aspect-ratio: 16 / 10;
+  }
+
+  .card-content {
+    padding: 18px;
+  }
+
+  .card-description {
+    font-size: 0.85rem;
+  }
+
+  .section-header h2 {
+    font-size: 30px;
+}
+
+.feature-box p {
+    font-size: 13px;
+    margin-bottom: 0px;
+}
+
+.feature-box h3 {
+    margin-bottom: 10px;
+    font-size: 1.25rem;
+}
+
+.feature-icon-lg {
+    margin-bottom: 20px;
+}
+
+.footer-brand .logo {
+	display: block;
+}
+
+.footer-col ul li a {
+    font-size: 0.7rem;
+}
+
+.footer-brand p {
+    font-size: 0.8rem;
+}
+
+.about-text h2 {
+    font-size: 2rem;
+}
+
+.about-text p {
+    margin-bottom: 1.3rem;
+    font-size: 0.8rem;
+}
+
+.stat-item span {
+    font-size: 0.7rem;
+}
+
+.stat-item h4 {
+    font-size: 2rem;
+}
+
+}
