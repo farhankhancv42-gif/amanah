@@ -49,28 +49,22 @@
 
 .glow {
     position: absolute;
-
     width: 400px;
     height: 400px;
-
     border-radius: 50%;
-
     filter: blur(120px);
-
     opacity: 0.25;
 }
 
 .glow-1 {
     top: 20%;
     right: 5%;
-
     background: #2563eb;
 }
 
 .glow-2 {
     bottom: 0;
     left: 10%;
-
     background: #7c3aed;
 }
 
@@ -171,7 +165,7 @@
     margin-bottom: 25px;
     border: 1px solid rgba(255, 255, 255, 0.12);
     border-radius: 30px;
-    color: #f1c84b;
+    color: #7c3aed;
     background: rgba(255, 255, 255, 0.025);
     font-size: 12px;
     letter-spacing: 2px;
@@ -180,9 +174,9 @@
 .hero-badge span {
     width: 7px;
     height: 7px;
-    background: #f1c84b;
+    background: #7c3aed;
     border-radius: 50%;
-    box-shadow: 0 0 12px #f1c84b;
+    box-shadow: 0 0 12px #7c3aed;
 }
 
 
@@ -223,48 +217,35 @@
 
 .hero-buttons {
     display: flex;
-
     gap: 15px;
-
     flex-wrap: wrap;
 }
 
 .btn-primary-custom,
 .btn-outline-custom {
     display: inline-flex;
-
     align-items: center;
-
     gap: 15px;
-
     padding: 15px 27px;
-
     border-radius: 50px;
-
     text-decoration: none;
-
     font-weight: 600;
-
     transition: 0.3s;
 }
 
 .btn-primary-custom {
     color: #ffffff;
-
     background:
         linear-gradient(90deg,
             #2563eb,
             #7c3aed);
-
     box-shadow:
         0 10px 35px rgba(37, 99, 235, 0.25);
 }
 
 .btn-primary-custom:hover {
     color: #ffffff;
-
     transform: translateY(-3px);
-
     box-shadow:
         0 15px 45px rgba(37, 99, 235, 0.4);
 }
