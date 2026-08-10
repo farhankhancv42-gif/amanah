@@ -15,18 +15,161 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- CSS -->
      <link rel="stylesheet" href="css/style.css">
+     <link rel="stylesheet" href="css/hero.css">
      <link rel="stylesheet" type="text/css" href="css/responsive.css">
 </head>
 <body>
 
+   <section class="ai-hero">
+      <!-- Background effects -->
+      <div class="hero-grid"></div>
+      <div class="glow glow-1"></div>
+      <div class="glow glow-2"></div>
+
+      <!-- Floating particles -->
+      <span class="particle p1"></span>
+      <span class="particle p2"></span>
+      <span class="particle p3"></span>
+      <span class="particle p4"></span>
+      <span class="particle p5"></span>
+      <span class="particle p6"></span>
+
+      <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg hero-navbar">
+    <div class="container">
+
+      <a class="navbar-brand" href="#">
+        <img src="css/images/company_logo2.png" alt="Amanah Digital">
+      </a>
+
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#heroNav"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="heroNav">
+
+        <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-4">
+
+          <li class="nav-item">
+            <a class="nav-link" href="#services">Services</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#portfolio">Portfolio</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#about">About</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#testimonials">
+              Testimonials
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact-section">
+              Contact
+            </a>
+          </li>
+          <li><a href="#contact" class="text-gradient start-project-btn" style="font-weight: 600;">Start Project</a></li>
+        </ul>
+
+      </div>
+    </div>
+  </nav>
+
+      <!-- Hero Content -->
+      <div class="container hero-container">
+        <div class="row align-items-center mt-3">
+          <!-- Left -->
+          <div class="col-lg-7 hero-content">
+            <div class="hero-badge">
+              <span></span>
+              AI SOLUTIONS
+            </div>
+
+            <h1>
+              Transform Your Business
+              <br />
+
+              <span class="gradient-text"> With Intelligent AI </span>
+
+              <br />
+
+              Solutions
+            </h1>
+
+            <p>
+              We build intelligent AI solutions, custom software, mobile
+              applications and automation systems that help businesses innovate,
+              scale and grow.
+            </p>
+
+            <div class="hero-buttons">
+              <a href="#contact" class="btn-primary-custom">
+                Start Your Project
+                <span>→</span>
+              </a>
+
+              <a href="#portfolio" class="btn-outline-custom">
+                Explore Our Work
+              </a>
+            </div>
+
+            <!-- Technologies -->
+            <div class="hero-tech">
+              <span>AI Integration</span>
+              <span>Custom LLM</span>
+              <span>Agentic AI</span>
+              <span>Mobile Apps</span>
+            </div>
+          </div>
+
+          <!-- Right Visual -->
+          <div class="col-lg-5">
+            <div class="ai-visual">
+              <!-- Orbit -->
+              <div class="orbit orbit-1"></div>
+              <div class="orbit orbit-2"></div>
+              <div class="orbit orbit-3"></div>
+
+              <!-- AI Sphere -->
+              <div class="ai-sphere">
+                <div class="sphere-core"></div>
+
+                <div class="sphere-lines"></div>
+
+                <div class="sphere-glow"></div>
+              </div>
+
+              <!-- Floating AI Card -->
+              <div class="ai-floating-card">
+                <div class="ai-icon">✦</div>
+
+                <div>
+                  <strong>AI Powered</strong>
+                  <small>Smart Business Solutions</small>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
     <!-- Header / Navigation -->
-    <header id="header">
+    <!-- <header id="header">
         <div class="container">
             <nav>
                 <a href="#" class="logo">
                     <img src="css/images/company_logo2.png" alt="Amanah Digital Logo" class="logo-img">
-                    <!-- AMANAH
-                    <span class="text-gradient">DIGITAL</span> -->
                 </a>
 
                 <div class="mobile-toggle" id="mobile-toggle">
@@ -42,11 +185,11 @@
                 </ul>
             </nav>
         </div>
-    </header>
+    </header> -->
 
     <main>
         <!-- Hero Section -->
-        <section id="hero">
+        <!-- <section id="hero">
             <canvas id="hero-canvas"></canvas>
             <div class="container hero-content">
                 <span class="hero-label reveal">AI Solutions</span>
@@ -56,7 +199,7 @@
                     <a href="#contact" class="btn btn-gold">Start Your Project</a>
                 </div>
             </div>
-        </section>
+        </section> -->
 
         <!-- Services Grid -->
         <section id="services" class="section-padding">
@@ -126,7 +269,6 @@
     <!-- Header -->
     <div class="portfolio-header">
       <h2 class="portfolio-title">Portfolio</h2>
-      <p class="portfolio-subtitle">Some of our recent work</p>
     </div>
 
     <!-- Filter Tabs -->
@@ -136,7 +278,7 @@
       <button class="filter-btn" data-filter="Mobile-App-Development">Mobile App Development</button>
       <button class="filter-btn" data-filter="Web-Development">Web Development</button>
       <button class="filter-btn" data-filter="CRM & Software Development">CRM & Software Development</button>
-      <button class="filter-btn" data-filter="CMS Development">CMS Development</button>
+      <button class="filter-btn" data-filter="E-Commerce">E-Commerce</button>
     </div>
 
     <!-- Portfolio Grid -->
@@ -145,19 +287,48 @@
     <!-- Card 1 -->
       <div class="portfolio-card" data-category="AI-Solutions">
         <div class="card-image">
-          <img src="css/images/ai-chat.png" alt="">
+          <img src="css/images/ai1.jpg" alt="">
           <div class="card-overlay">
             <!-- <button class="view-btn">View Project</button> -->
           </div>
         </div>
         <div class="card-content">
           <span class="card-badge">AI Solutions</span>
-          <h3 class="card-title">Custom AI Chatbot</h3>
-          <p class="card-description">AI-powered chatbot built with OpenAI to automate customer support and deliver instant responses.</p>
+          <h3 class="card-title">AI-Powered Workflow Solutionst</h3>
+          <p class="card-description">A futuristic AI platform designed to automate workflows, boost productivity, and deliver smarter business solutions.</p>
         </div>
       </div>
 
       <!-- Card 2 -->
+      <div class="portfolio-card" data-category="AI-Solutions">
+        <div class="card-image">
+          <img src="css/images/ai2.jpg" alt="">
+          <div class="card-overlay">
+          </div>
+        </div>
+        <div class="card-content">
+          <span class="card-badge">AI Solutions</span>
+          <h3 class="card-title">AI Chatbot Assistant</h3>
+          <p class="card-description">An intelligent AI chatbot designed to provide instant answers, automate conversations, and deliver a seamless user experience.</p>
+        </div>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="portfolio-card" data-category="AI-Solutions">
+        <div class="card-image">
+          <img src="css/images/ai-agent.png" alt="">
+          <div class="card-overlay">
+            <!-- <button class="view-btn">View Project</button> -->
+          </div>
+        </div>
+        <div class="card-content">
+          <span class="card-badge">AI Solutions</span>
+          <h3 class="card-title">AI Agent Platform</h3>
+          <p class="card-description">Autonomous AI agents designed to automate business processes and perform complex tasks efficiently.</p>
+        </div>
+      </div>
+
+      <!-- Card 4 -->
       <div class="portfolio-card" data-category="Mobile-App-Development">
         <div class="card-image">
           <img src="css/images/mobile-app.png" alt="">
@@ -169,36 +340,6 @@
           <span class="card-badge">Mobile App Development</span>
           <h3 class="card-title">Fitness Tracking App</h3>
           <p class="card-description">Track workouts, monitor progress, and achieve fitness goals with a modern, user-friendly mobile experience.</p>
-        </div>
-      </div>
-
-      <!-- Card 3 -->
-      <div class="portfolio-card" data-category="Web-Development">
-        <div class="card-image">
-          <img src="css/images/web-development.png" alt="">
-          <div class="card-overlay">
-            <!-- <button class="view-btn">View Project</button> -->
-          </div>
-        </div>
-        <div class="card-content">
-          <span class="card-badge">Web Development</span>
-          <h3 class="card-title">Real Estate Website</h3>
-          <p class="card-description">Modern property listing platform with advanced search, interactive listings, and seamless lead generation.</p>
-        </div>
-      </div>
-
-      <!-- Card 4 -->
-      <div class="portfolio-card" data-category="CMS Development">
-        <div class="card-image">
-          <img src="css/images/cms.png" alt="">
-          <div class="card-overlay">
-            <!-- <button class="view-btn">View Project</button> -->
-          </div>
-        </div>
-        <div class="card-content">
-          <span class="card-badge">CMS Development</span>
-          <h3 class="card-title">Content Management System</h3>
-          <p class="card-description">Manage pages, media, users, and content effortlessly with a secure and scalable CMS platform.</p>
         </div>
       </div>
 
@@ -218,66 +359,6 @@
       </div>
 
       <!-- Card 6 -->
-      <div class="portfolio-card" data-category="AI-Solutions">
-        <div class="card-image">
-          <img src="css/images/ai-business.png" alt="">
-          <div class="card-overlay">
-            <!-- <button class="view-btn">View Project</button> -->
-          </div>
-        </div>
-        <div class="card-content">
-          <span class="card-badge">AI Solutions</span>
-          <h3 class="card-title">AI Business Assistant</h3>
-          <p class="card-description">Smart AI assistant that streamlines workflows, answers queries, and improves business productivity.</p>
-        </div>
-      </div>
-
-      <!-- Card 7 -->
-      <div class="portfolio-card" data-category="CRM & Software Development">
-        <div class="card-image">
-          <img src="css/images/crm.png" alt="">
-          <div class="card-overlay">
-            <!-- <button class="view-btn">View Project</button> -->
-          </div>
-        </div>
-        <div class="card-content">
-          <span class="card-badge">CRM & Software Development</span>
-          <h3 class="card-title">CRM Dashboard</h3>
-          <p class="card-description">Manage customers, sales pipelines, and business operations through a powerful, intuitive CRM dashboard.</p>
-        </div>
-      </div>
-
-      <!-- Card 8 -->
-      <div class="portfolio-card" data-category="Web-Development">
-        <div class="card-image">
-          <img src="css/images/web-development2.png" alt="">
-          <div class="card-overlay">
-            <!-- <button class="view-btn">View Project</button> -->
-          </div>
-        </div>
-        <div class="card-content">
-          <span class="card-badge">Web Development</span>
-          <h3 class="card-title">Business Website</h3>
-          <p class="card-description">Professional corporate website designed to showcase services, strengthen your brand, and generate quality leads.</p>
-        </div>
-      </div>
-
-      <!-- Card 9 -->
-      <div class="portfolio-card" data-category="CMS Development">
-        <div class="card-image">
-          <img src="css/images/cms2.png" alt="">
-          <div class="card-overlay">
-            <!-- <button class="view-btn">View Project</button> -->
-          </div>
-        </div>
-        <div class="card-content">
-          <span class="card-badge">CMS Development</span>
-          <h3 class="card-title">CMS Admin Dashboard</h3>
-          <p class="card-description">A powerful admin panel for managing website content, users, analytics, and business operations.</p>
-        </div>
-      </div>
-
-      <!-- Card 10 -->
       <div class="portfolio-card" data-category="Mobile-App-Development">
         <div class="card-image">
           <img src="css/images/mobile3.png" alt="">
@@ -292,37 +373,67 @@
         </div>
       </div>
 
+       <!-- Card 7 -->
+      <div class="portfolio-card" data-category="Web-Development">
+        <div class="card-image">
+          <img src="css/images/web-development.png" alt="">
+          <div class="card-overlay">
+            <!-- <button class="view-btn">View Project</button> -->
+          </div>
+        </div>
+        <div class="card-content">
+          <span class="card-badge">Web Development</span>
+          <h3 class="card-title">Real Estate Website</h3>
+          <p class="card-description">Modern property listing platform with advanced search, interactive listings, and seamless lead generation.</p>
+        </div>
+      </div>
+
+       <!-- Card 8 -->
+      <div class="portfolio-card" data-category="Web-Development">
+        <div class="card-image">
+          <img src="css/images/gym_wear.jpeg" alt="">
+          <div class="card-overlay">
+            <!-- <button class="view-btn">View Project</button> -->
+          </div>
+        </div>
+        <div class="card-content">
+          <span class="card-badge">Web Development</span>
+          <h3 class="card-title">Women’s Fitness Website</h3>
+          <p class="card-description">A modern fitness fashion website showcasing activewear, gym wear, leggings, and sports collections with a clean shopping experience.</p>
+        </div>
+      </div>
+
+      <!-- Card 9 -->
+      <div class="portfolio-card" data-category="Web-Development">
+        <div class="card-image">
+          <img src="css/images/jwellry1.png" alt="">
+          <div class="card-overlay">
+            <!-- <button class="view-btn">View Project</button> -->
+          </div>
+        </div>
+        <div class="card-content">
+          <span class="card-badge">Web Development</span>
+          <h3 class="card-title">Luxury Jewelry Website</h3>
+          <p class="card-description">A modern and elegant jewelry website designed with a premium visual experience, showcasing collections and products beautifully.</p>
+        </div>
+      </div>
+
+      <!-- Card 10 -->
+      <div class="portfolio-card" data-category="Web-Development">
+        <div class="card-image">
+          <img src="css/images/a-loving1.png" alt="">
+          <div class="card-overlay">
+            <!-- <button class="view-btn">View Project</button> -->
+          </div>
+        </div>
+        <div class="card-content">
+          <span class="card-badge">Web Development</span>
+          <h3 class="card-title">Creative Marketing Website</h3>
+          <p class="card-description">A modern, creative website built to showcase a brand, engage audiences, and drive marketing campaigns with a bold visual experience.</p>
+        </div>
+      </div>
+
       <!-- Card 11 -->
-      <div class="portfolio-card" data-category="AI-Solutions">
-        <div class="card-image">
-          <img src="css/images/ai-agent.png" alt="">
-          <div class="card-overlay">
-            <!-- <button class="view-btn">View Project</button> -->
-          </div>
-        </div>
-        <div class="card-content">
-          <span class="card-badge">AI Solutions</span>
-          <h3 class="card-title">AI Agent Platform</h3>
-          <p class="card-description">Autonomous AI agents designed to automate business processes and perform complex tasks efficiently.</p>
-        </div>
-      </div>
-
-      <!-- Card 12 -->
-      <div class="portfolio-card" data-category="CRM & Software Development">
-        <div class="card-image">
-          <img src="css/images/crm2.png" alt="">
-          <div class="card-overlay">
-            <!-- <button class="view-btn">View Project</button> -->
-          </div>
-        </div>
-        <div class="card-content">
-          <span class="card-badge">CRM & Software Development</span>
-          <h3 class="card-title">Sales Management CRM</h3>
-          <p class="card-description">Streamline lead tracking, team collaboration, and sales performance with a modern CRM solution.</p>
-        </div>
-      </div>
-
-      <!-- Card 13 -->
       <div class="portfolio-card" data-category="Web-Development">
         <div class="card-image">
           <img src="css/images/web-development3.png" alt="">
@@ -337,22 +448,53 @@
         </div>
       </div>
 
-      <!-- Card 14 -->
-      <div class="portfolio-card" data-category="CMS Development">
+      <!-- Card 12 -->
+      <div class="portfolio-card" data-category="Web-Development">
         <div class="card-image">
-          <img src="css/images/cms3.png" alt="">
+          <img src="css/images/scholars1.png" alt="">
+          <div class="card-overlay">
+            <!-- <button class="view-btn">View Project</button> -->
+          </div>
+        </div>
+        <div class="card-content">
+          <span class="card-badge">Web Development</span>
+          <h3 class="card-title">Student Visa & Education Website</h3>
+          <p class="card-description">A modern education consultancy website helping students explore study opportunities, visa guidance, and career options abroad.</p>
+        </div>
+      </div>
+
+
+      <!-- Card 10 -->
+      <div class="portfolio-card" data-category="CRM & Software Development">
+        <div class="card-image">
+          <img src="css/images/cms2.png" alt="">
           <div class="card-overlay">
             <!-- <button class="view-btn">View Project</button> -->
           </div>
         </div>
         <div class="card-content">
           <span class="card-badge">CMS Development</span>
-          <h3 class="card-title">Blog & Content Management</h3>
-          <p class="card-description">Publish, edit, and organize articles with an intuitive content editor and SEO-friendly CMS interface.</p>
+          <h3 class="card-title">CMS Admin Dashboard</h3>
+          <p class="card-description">A powerful admin panel for managing website content, users, analytics, and business operations.</p>
         </div>
       </div>
 
-      <!-- Card 15 -->
+      <!-- Card 11 -->
+      <div class="portfolio-card" data-category="CRM & Software Development">
+        <div class="card-image">
+          <img src="css/images/crm2.png" alt="">
+          <div class="card-overlay">
+            <!-- <button class="view-btn">View Project</button> -->
+          </div>
+        </div>
+        <div class="card-content">
+          <span class="card-badge">CRM Development</span>
+          <h3 class="card-title">Sales Management CRM</h3>
+          <p class="card-description">Streamline lead tracking, team collaboration, and sales performance with a modern CRM solution.</p>
+        </div>
+      </div>
+
+      <!-- Card 12 -->
       <div class="portfolio-card" data-category="CRM & Software Development">
         <div class="card-image">
           <img src="css/images/software.png" alt="">
@@ -361,9 +503,51 @@
           </div>
         </div>
         <div class="card-content">
-          <span class="card-badge">CRM & Software Development</span>
+          <span class="card-badge">Software Development</span>
           <h3 class="card-title">Enterprise Software Platform</h3>
           <p class="card-description">Custom software platform with analytics, workflow automation, and business management tools for growing enterprises.</p>
+        </div>
+      </div>
+
+      <!-- Card 13 -->
+      <div class="portfolio-card" data-category="E-Commerce">
+        <div class="card-image">
+          <img src="css/images/Vitals_Kingdom.png" alt="">
+          <div class="card-overlay">
+          </div>
+        </div>
+        <div class="card-content">
+          <span class="card-badge">Shopify</span>
+          <h3 class="card-title">Vitals Kingdom Store</h3>
+          <p class="card-description">A premium Shopify e-commerce store for authentic sports nutrition and health supplements, designed for a smooth and modern shopping experience.</p>
+        </div>
+      </div>
+
+      <!-- Card 14 -->
+      <div class="portfolio-card" data-category="E-Commerce">
+        <div class="card-image">
+          <img src="css/images/e-commerce2.png" alt="">
+          <div class="card-overlay">
+          </div>
+        </div>
+        <div class="card-content">
+          <span class="card-badge">E-Commerce</span>
+          <h3 class="card-title">Modern E-Commerce Store</h3>
+          <p class="card-description">A fast, responsive, and conversion-focused e-commerce website with modern UI, secure payments, and seamless shopping experience.</p>
+        </div>
+      </div>
+
+      <!-- Card 15 -->
+      <div class="portfolio-card" data-category="E-Commerce">
+        <div class="card-image">
+          <img src="css/images/e-commerce3.jpg" alt="">
+          <div class="card-overlay">
+          </div>
+        </div>
+        <div class="card-content">
+          <span class="card-badge">E-Commerce</span>
+          <h3 class="card-title">Nebula – Modern E-Commerce Store</h3>
+          <p class="card-description">A modern multi-category e-commerce website featuring a clean UI, product discovery, trending products, deals, and a seamless shopping experience.</p>
         </div>
       </div>
 
@@ -597,5 +781,7 @@
 
 <script src="main.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/headroom.js@0.12.0/dist/headroom.min.js"></script>
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
