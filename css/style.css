@@ -654,62 +654,130 @@ img {
     font-size: 0.95rem;
 }
 
-/* --- TESTIMONIALS --- */
-#testimonials {
-    background: #080808;
+/* ─── TESTIMONIALS SECTION ───────────────────────────────── */
+.testimonials-section {
+  background: var(--bg-color);
+  padding: 80px 0;
+  overflow: hidden;
 }
 
-.testimonial-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 2rem;
+.testimonial-swiper {
+  padding: 20px 10px 60px !important;
+}
+
+.swiper-slide {
+  height: auto;
+  display: flex;
 }
 
 .testimonial-card {
-    background: var(--surface-color);
-    padding: 2.5rem;
-    border-radius: 16px;
-    border: 1px solid var(--border-color);
-    position: relative;
+  width: 100%;
+  height: 100%;
 }
 
-.quote-icon {
-    font-size: 2rem;
-    color: rgba(212, 175, 55, 0.2);
-    position: absolute;
-    top: 2rem;
-    right: 2rem;
+.testimonial-card-inner {
+  background: var(--surface-color);
+  border: 1px solid var(--border-color);
+  border-radius: 16px;
+  padding: 2rem;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
 }
 
-.testimonial-text {
-    font-size: 1.1rem;
-    font-style: italic;
-    color: #d1d1d1;
-    margin-bottom: 1.5rem;
+.testimonial-card-inner:hover {
+  transform: translateY(-6px);
+  border-color: #7c3aed;
+  box-shadow: 0 10px 35px rgba(37, 99, 235, 0.25);
 }
 
-.client-info {
-    display: flex;
-    align-items: center;
-    gap: 1rem;
+.testi-quote {
+  font-size: 2rem;
+  color: #2563eb;
+  line-height: 1;
 }
 
-.client-avatar {
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    object-fit: cover;
-    border: 2px solid var(--gold-primary);
+.testi-text {
+  font-size: 0.95rem;
+  color: var(--text-muted);
+  line-height: 1.7;
+  flex: 1;
+  font-style: italic;
 }
 
-.client-details h5 {
-    font-size: 1rem;
-    font-weight: 600;
+.testi-stars {
+  display: flex;
+  gap: 0.3rem;
+  color: #f59e0b;
+  font-size: 0.9rem;
 }
 
-.client-details span {
-    font-size: 0.85rem;
-    color: var(--text-muted);
+.testi-author {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--border-color);
+}
+
+.testi-author img {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #7c3aed;
+}
+
+.testi-author strong {
+  display: block;
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--text-main);
+}
+
+.testi-author span {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+}
+
+/* Swiper Controls Styling */
+.swiper-pagination-bullet {
+  background: rgba(255, 255, 255, 0.3);
+  opacity: 1;
+  width: 8px;
+  height: 8px;
+  transition: all 0.3s ease;
+}
+
+.swiper-pagination-bullet-active {
+  background: #2563eb;
+  width: 24px;
+  border-radius: 4px;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  color: #ffffff !important;
+  background: var(--surface-color);
+  border: 1px solid var(--border-color);
+  width: 42px !important;
+  height: 42px !important;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+}
+
+.swiper-button-prev::after,
+.swiper-button-next::after {
+  font-size: 0.9rem !important;
+  font-weight: 700;
+}
+
+.swiper-button-prev:hover,
+.swiper-button-next:hover {
+  background: #2563eb;
+  border-color: #2563eb;
 }
 
 /*Contact Us Section*/
@@ -928,6 +996,38 @@ footer {
     align-items: center;
     color: var(--text-muted);
     font-size: 0.85rem;
+}
+
+.footer-mail-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 8px 18px;
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    border-radius: 30px;
+    color: #ffffff;
+    font-size: 0.9rem;
+    font-weight: 500;
+    transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.footer-mail-btn svg {
+    stroke: #7c3aed;
+    transition: transform 0.3s ease, stroke 0.3s ease;
+}
+
+.footer-mail-btn:hover {
+    color: #ffffff;
+    border-color: #7c3aed;
+    background: linear-gradient(90deg, rgba(37, 99, 235, 0.15), rgba(124, 58, 237, 0.15));
+    box-shadow: 0 0 20px rgba(124, 58, 237, 0.35);
+    transform: translateY(-2px);
+}
+
+.footer-mail-btn:hover svg {
+    stroke: #ffffff;
+    transform: scale(1.1);
 }
 
 /* --- RESPONSIVE --- */
