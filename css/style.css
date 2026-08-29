@@ -1101,3 +1101,140 @@ footer {
 .navbar {
     --bs-navbar-toggler-icon-bg: url(data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='white' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e) !important;
 }
+
+
+/* ─── TESTIMONIALS SLIDER STYLES ───────────────────────────────── */
+.testimonials-section {
+  background: var(--bg-color);
+  padding: 80px 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.testimonial-swiper {
+  padding: 20px 10px 60px !important;
+}
+
+.swiper-slide {
+  height: auto;
+  display: flex;
+}
+
+.testimonial-card {
+  width: 100%;
+  height: 100%;
+}
+
+.testimonial-card-inner {
+  background: var(--surface-color);
+  border: 1px solid var(--border-color);
+  border-radius: 16px;
+  padding: 2rem;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+.testimonial-card-inner:hover {
+  transform: translateY(-6px);
+  border-color: #7c3aed;
+  box-shadow: 0 10px 35px rgba(37, 99, 235, 0.25);
+}
+
+.testi-quote {
+  font-size: 2rem;
+  color: #2563eb;
+  line-height: 1;
+}
+
+.testi-text {
+  font-size: 0.95rem;
+  color: var(--text-muted);
+  line-height: 1.7;
+  flex: 1;
+  font-style: italic;
+}
+
+.testi-stars {
+  display: flex;
+  gap: 0.3rem;
+  color: #f59e0b;
+  font-size: 0.9rem;
+}
+
+.testi-author {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--border-color);
+}
+
+/* Rounded Initials Badge (Image Replacement) */
+.testi-avatar-initials {
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, rgba(37, 99, 235, 0.25), rgba(124, 58, 237, 0.25));
+  border: 1px solid rgba(124, 58, 237, 0.5);
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 0.9rem;
+  letter-spacing: 0.5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.testi-author strong {
+  display: block;
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--text-main);
+}
+
+.testi-author span {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+}
+
+/* Swiper Controls */
+.swiper-pagination-bullet {
+  background: rgba(255, 255, 255, 0.3);
+  opacity: 1;
+  width: 8px;
+  height: 8px;
+  transition: all 0.3s ease;
+}
+
+.swiper-pagination-bullet-active {
+  background: #2563eb;
+  width: 24px;
+  border-radius: 4px;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  color: #ffffff !important;
+  background: var(--surface-color);
+  border: 1px solid var(--border-color);
+  width: 42px !important;
+  height: 42px !important;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+}
+
+.swiper-button-prev::after,
+.swiper-button-next::after {
+  font-size: 0.9rem !important;
+  font-weight: 700;
+}
+
+.swiper-button-prev:hover,
+.swiper-button-next:hover {
+  background: #2563eb;
+  border-color: #2563eb;
+}
